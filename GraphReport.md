@@ -169,6 +169,13 @@ NOTES
 *Thinking of following this pattern runners-> runner.reset-> 
     walker.reset -> grid.reset -> square.reset
 
-*Fixed logical bug between 2nd and 3rd bug 
+*Fixed logical bug between 2nd and 3rd if statements
     in my monitor() in runners.py
 *Something close now init
+
+*We finally made chippy learn from past experience 
+    and make decisions in third metacognition
+
+./Dissertation.py -l 5
+![alt text](https://github.com/tabularrasa/Chippy/blob/JesuyeChippy/allPix/firstKasai.PNG)
+
