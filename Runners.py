@@ -172,18 +172,22 @@ class MCL2(Runner.Runner):
         #print("printing arch pattern from runners.py-", len(self.__archQdic), self.__archQdic)
     def giveSavedQdic(self):
         return self.__archQdic
-        
+    def giveSavedQdic2(self):
+        return self.__archQdic.keys()        
     def monitor(self,results):
         #curframe = inspect.currentframe()
         #print ('caller name:', inspect.getouterframes(curframe, 2)[1][4])
         # 1. Assume that there is nothing to do
         suggestion = SUGGEST_NONE
 
-        # 2. If unexpected reward, evaluate
+        if str(self.grid().rewards()) in self.__archQdic:
+            #print("We are here doing something!!!w98rwe897")
+            return SUGGEST_KASAI
 
+        # 2. If unexpected reward, evaluate
         if results[RESULT_EXP_REWARD] != None and \
            results[RESULT_EXP_REWARD] != results[RESULT_ACT_REWARD]:
-            print 'Runners.Level3HC.monitor: unexpected reward %s at %s expected %s' % (
+            print '24234Runners.Level3HC.monitor: unexpected reward %s at %s expected %s' % (
                 results[RESULT_ACT_REWARD],
                 results[RESULT_REWARD_LOC],
                 results[RESULT_EXP_REWARD])

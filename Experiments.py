@@ -59,7 +59,7 @@ class Experiments(object):
         else:
             exps = [experiments]
         for exp in exps:
-
+            print("here is:", self.walker.giveSavedQdic2())
             # 4. Determine the rewards for the experiment
             initial_rewards = REWARDS[EXPERIMENTS[exp][INITIAL]];
             changed_rewards = REWARDS[EXPERIMENTS[exp][CHANGED]]

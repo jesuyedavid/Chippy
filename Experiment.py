@@ -78,7 +78,7 @@ class Experiment(object):
             if step%5000==0 and step>1:
                 key=str(self.grid.rewards())
                 val=(self.grid.viewQvalues())
-                #self.walker.accumulateQdic(key, val)
+                self.walker.accumulateQdic(key, val)
 
             # 7. Switch the rewards if it is time
             if step == self.switch:

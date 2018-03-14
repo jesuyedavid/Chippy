@@ -63,7 +63,7 @@ class Runner(QLearner.QLearner):
             print "Runner.move: implementing reset"
             self.reset()
         elif suggestion==SUGGEST_KASAI:
-            print "Runner.move implementing kasai"
+            #print "Runner.move implementing kasai"
             self.kasai(self.giveSavedQdic()[str(self.grid().rewards())])
             pass
         
