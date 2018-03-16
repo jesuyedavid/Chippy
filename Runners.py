@@ -187,7 +187,7 @@ class MCL2(Runner.Runner):
         # 2. If unexpected reward, evaluate
         if results[RESULT_EXP_REWARD] != None and \
            results[RESULT_EXP_REWARD] != results[RESULT_ACT_REWARD]:
-            print '24234Runners.Level3HC.monitor: unexpected reward %s at %s expected %s' % (
+            print 'Runners.Level3HC.monitor: unexpected reward %s at %s expected %s' % (
                 results[RESULT_ACT_REWARD],
                 results[RESULT_REWARD_LOC],
                 results[RESULT_EXP_REWARD])

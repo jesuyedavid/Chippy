@@ -58,8 +58,9 @@ class Experiments(object):
             exps = range(len(EXPERIMENTS))
         else:
             exps = [experiments]
+        i=0
         for exp in exps:
-            print("here is:", self.walker.giveSavedQdic2())
+            print("here is exp:", i)
             # 4. Determine the rewards for the experiment
             initial_rewards = REWARDS[EXPERIMENTS[exp][INITIAL]];
             changed_rewards = REWARDS[EXPERIMENTS[exp][CHANGED]]
@@ -75,7 +76,7 @@ class Experiments(object):
                 print "%s %2d" % (self.walker, exp),
                 sys.stdout.flush()
 
-
+            i+=1
             # 6. Loop for the number of repeats
             prefix = None
             rewards = 0

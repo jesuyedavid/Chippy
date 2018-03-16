@@ -66,7 +66,7 @@ class Grid(object):
         self.__totalSteps=0
         self.__rewardsForGraph=0
         self.__axes = plt.gca()
-        self.__axes.set_xlim(0, 5000000)
+        self.__axes.set_xlim(0, 9000000)
         self.__axes.set_ylim(0, 20000)
         self.__line, = self.__axes.plot(self.__stepsForGraph, self.__resultsForGraph, 'r-')
 
