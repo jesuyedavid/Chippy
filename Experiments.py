@@ -60,7 +60,7 @@ class Experiments(object):
             exps = [experiments]
         i=0
         for exp in exps:
-            print("here is exp:", i)
+            #print("here is exp:", i)
             # 4. Determine the rewards for the experiment
             initial_rewards = REWARDS[EXPERIMENTS[exp][INITIAL]];
             changed_rewards = REWARDS[EXPERIMENTS[exp][CHANGED]]
